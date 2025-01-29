@@ -1,0 +1,23 @@
+INSERT INTO beverages (title, description, price) VALUES
+('Classic Lemonade', 'Freshly squeezed lemons with a hint of mint.', 2.99),
+('Iced Coffee', 'Chilled coffee served with ice and milk.', 3.49),
+('Mango Smoothie', 'Blended mangoes, yogurt, and a touch of honey.', 4.99),
+('Green Tea', 'Refreshing hot green tea with jasmine.', 2.49),
+('Hot Chocolate', 'Creamy hot cocoa topped with whipped cream.', 3.99),
+('Berry Fizz', 'Sparkling soda with mixed berry flavor.', 3.29),
+('Vanilla Milkshake', 'Rich vanilla ice cream blended with milk.', 4.49),
+('Ginger Ale', 'Fizzy drink with natural ginger flavor.', 2.89),
+('Orange Juice', 'Freshly squeezed oranges, no sugar added.', 3.19),
+('Sparkling Water', 'Plain sparkling water with a slice of lime.', 1.99);
+
+INSERT INTO pizzas (title, description, price) VALUES
+('Margherita Classic', 'Tomato sauce, mozzarella, basil, olive oil.', 9.99),
+('Pepperoni Feast', 'Tomato sauce, mozzarella, pepperoni, oregano', 12.99),
+('BBQ Chicken Delight', 'BBQ sauce, grilled chicken, red onion, mozzarella, cilantro', 13.99),
+('Vegetarian Garden', 'Tomato sauce, mozzarella, bell peppers, onions, mushrooms, black olives, spinach', 11.99),
+('Hawaiian Tropical', 'Tomato sauce, mozzarella, ham, pineapple, oregano.', 12.49),
+('Meat Lover’s Supreme', 'Tomato sauce, mozzarella, pepperoni, sausage, bacon, ham.', 14.99),
+('Four Cheese Medley', 'Tomato sauce, mozzarella, parmesan, cheddar, gorgonzola.', 13.49),
+('Mediterranean Veggie', 'Tomato sauce, mozzarella, feta, black olives, artichokes, sun-dried tomatoes, spinach.', 13.99),
+('Spicy Diablo', 'Tomato sauce, mozzarella, spicy sausage, jalapeños, red chili flakes.', 12.99),
+('Truffle Mushroom Gourmet', 'Truffle cream sauce, mozzarella, parmesan, mushrooms, arugula.', 15.99);

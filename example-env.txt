@@ -1,0 +1,6 @@
+DB=postgresql+asyncpg://{Your username}:{Your password}@{Your host}:{Your port}/restaurant
+SECRET_TOKEN={Your secret token}
+MAIL_USERNAME={Your mail username}
+MAIL_PASSWORD={Your app mail password}
+MAIL_FROM={Your email}
+MAIL_FROM_NAME={Your custom email name}

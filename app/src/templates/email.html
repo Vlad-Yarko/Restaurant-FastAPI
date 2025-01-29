@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+{{ super() }}
+<form action='/account/{{ request.cookies.get("action") }}/email?mode={{ mode }}' method="POST">
+    <div class="text-center">
+        <div class="margin_up_low">
+            <label for='code'>Code:</label><input id="code" placeholder="your code" type="text" name="code">
+        </div>
+        <div class="margin_up_low">
+            <button type="reset" value="reset data" class="buttons-main btn btn-outline-danger">Reset</button>
+        </div>
+        <div class="margin_up_low">
+            <input type="submit" class="buttons-main btn btn-outline-success">
+        </div>
+    </div>
+</form>
+{% endblock content %}

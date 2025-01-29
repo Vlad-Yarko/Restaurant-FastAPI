@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+{{ super() }}
+<form action='/account/signup?mode={{ mode }}' method="POST">
+    <div class="text-center">
+        <div class="margin_up_low">
+            <label for='username'>Username:</label><input id="username" placeholder="your username" type="text" name="username">
+        </div>
+        <div class="margin_up_low">
+            <label for='password'>Password:</label><input id="password" placeholder="your password" type="password" name="password">
+        </div>
+        <div>
+            <label for='email'>Email:</label><input id="email" placeholder="your email" type="email" name="email">
+        </div>
+        <div class="margin_up_low">
+            <button type="reset" value="reset data" class="buttons-main btn btn-outline-danger">Reset</button>
+        </div>
+        <div class="margin_up_low">
+            <input type="submit" class="buttons-main btn btn-outline-success">
+        </div>
+    </div>
+</form>
+{% endblock content %}

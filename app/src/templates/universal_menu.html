@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+{{ super() }}
+<a href="{{ request.url.path }}?mode={{ mode }}{% if not sort %}&sort=True{% endif %}"><button class="buttons-main btn btn-outline-info">Sort by price</button></a>
+<h1 class="text-center fw-light">{{ title }}</h1>
+<table class="bg-{{ bg }}" cellpadding="5">
+    <thead>
+        <tr class="text-center">
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price $</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for unit in menu %}
+            <tr class="text-center">
+                <td>{{ unit.title }}</td>
+                <td>{{ unit.description }}</td>
+                <td>{{ unit.price }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

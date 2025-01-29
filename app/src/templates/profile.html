@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+{% block content %}
+{{ super() }}
+<img src="/static/user_images/{{ image }}">
+<h1>{{ username }}</h1>
+<a href="/account/profile/update_image?mode={{ mode }}"><button>Update profile photo</button></a>
+{% endblock content %}

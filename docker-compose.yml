@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  fastapi_app:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/app.Dockerfile
+    container_name: "fastapi_app"
+    ports:
+      - "8000:8000"
+
+  database:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: oderman
+    ports:
+      - "5432:5432"
+    volumes:
+       - postgres_data:/var/lib/postgresql/data
+    container_name: database
+
+volumes:
+  postgres_data: {}
